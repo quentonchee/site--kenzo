@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Echoes Films — Vidéaste en Occitanie · Captations, clips & reportages</title>
+  <meta name="description"
+    content="Kenzo Fossier, vidéaste en Occitanie (Narbonne, Béziers, Montpellier). Captations de concerts, clips musicaux, reportages et films événementiels. Devis gratuit.">
+  <meta property="og:title" content="Echoes Films — Des films qui font écho">
+  <meta property="og:description" content="Captations live, clips musicaux et reportages en Occitanie.">
+  <meta property="og:image" content="assets/img/elizik.jpg">
+  <meta name="theme-color" content="#0b0b0b">
+  <link rel="icon" href="assets/img/emblem.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ========== NAV ========== -->
+  <header class="nav" id="nav">
+    <a href="#top" class="brand" aria-label="Echoes Films — accueil">Echoes Films</a>
+    <nav class="nav__links" aria-label="Navigation principale">
+      <a href="#realisations">Réalisations</a>
+      <a href="#services">Prestations</a>
+      <a href="#apropos">À propos</a>
+      <a href="#avis">Avis</a>
+    </nav>
+    <a href="#contact" class="nav__cta">Demander un devis</a>
+    <button class="nav__burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <a href="#realisations">Réalisations</a>
+    <a href="#services">Prestations</a>
+    <a href="#apropos">À propos</a>
+    <a href="#avis">Avis</a>
+    <a href="#contact">Demander un devis</a>
+  </div>
+  <!-- ========== NAV ========== -->
+  <main id="top">
+
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+      <div class="hero__media" aria-hidden="true">
+        <img src="assets/img/elizik.jpg" alt="">
+      </div>
+
+      <div class="hero__hud" aria-hidden="true">
+        <span class="rec"><i></i>REC</span>
+        <span id="timecode">00:00:00:00</span>
+      </div>
+
+      <div class="hero__content wrap">
+        <h1 class="hero__title">Des films qui <em>font écho.</em></h1>
+        <div class="hero__bottom">
+          <p class="hero__lead">
+            Kenzo Fossier, vidéaste en Occitanie. Concerts, clips, événements et reportages&nbsp;—
+            je filme vos moments forts et j'en fais des vidéos qu'on regarde jusqu'au bout.
+          </p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--light">Parler de mon projet</a>
+            <button class="btn btn--line" data-video="yt:ewIkmJE53Hc"
+              data-title="Showreel 2025">▶&ensp;Showreel</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROOF ========== -->
+    <section class="proof" aria-label="En chiffres">
+      <div class="wrap proof__grid">
+        <div><strong><span data-count="2">2</span>M+</strong><span>vues sur TikTok</span></div>
+        <div><strong><span data-count="20">20</span>k+</strong><span>abonnés</span></div>
+        <div><strong><span data-count="10">10</span>+</strong><span>films réalisés</span></div>
+        <div><strong><span data-count="5">5</span> ans</strong><span>derrière la caméra</span></div>
+      </div>
+      <p class="wrap proof__clients">
+        <span class="label">Ils m'ont fait confiance</span>
+        Ville de Narbonne <i>/</i> Festival Elizik <i>/</i> Mairie de Villeneuve-lès-Béziers <i>/</i> Sacem <i>/</i>
+        Croix-Rouge française <i>/</i> Brand New Coconut <i>/</i> Sophie les Bas Bleus <i>/</i> The Organics
+      </p>
+    </section>
+
+    <!-- ========== PORTFOLIO ========== -->
+    <section class="section" id="realisations">
+      <div class="wrap">
+        <header class="head">
+          <span class="label">01 — Réalisations</span>
+          <h2 class="h2">Le travail parle <em>mieux que moi.</em></h2>
+          <div class="filters" role="tablist" aria-label="Filtrer les réalisations">
+            <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">Tout
+              <sup>10</sup></button>
+            <button class="filter" data-filter="live" role="tab" aria-selected="false">Musique <sup>3</sup></button>
+            <button class="filter" data-filter="event" role="tab" aria-selected="false">Événementiel
+              <sup>2</sup></button>
+            <button class="filter" data-filter="doc" role="tab" aria-selected="false">Reportages <sup>5</sup></button>
+          </div>
+        </header>
+
+        <div class="grid" id="grid">
+          <article class="work work--feature" data-cat="live" data-video="yt:ZNZoCw3kd3o"
+            data-title="Brand New Coconut — Clip live">
+            <figure class="work__img"><img src="assets/img/brand-new-coconut.jpg"
+                alt="Le bassiste de Brand New Coconut sur scène" loading="lazy"><span class="work__cue">▶ Lire</span>
+            </figure>
+            <div class="work__cap"><span class="work__n">01</span>
+              <h3>Brand New Coconut</h3><span class="work__type">Clip live · captation & montage</span>
+            </div>
+          </article>
+          <article class="work" data-cat="live" data-video="yt:WjNtEWhwgZQ"
+            data-title="Sophie les Bas Bleus — Clip live">
+            <figure class="work__img"><img src="assets/img/sophie-bas-bleus.jpg" alt="Sophie les Bas Bleus sur scène"
+                loading="lazy"><span class="work__cue">▶ Lire</span></figure>
+            <div class="work__cap"><span class="work__n">02</span>
+              <h3>Sophie les Bas Bleus</h3><span class="work__type">Clip live · étalonnage</span>
+            </div>
+          </article>
+          <article class="work" data-cat="live" data-video="drive:1pppkrDJ2mTZ-nWbjYvFdmbX0gcSM89vu"
+            data-title="The Organics — Clip studio">
+            <figure class="work__img"><img src="assets/img/the-organics.jpg" alt="The Organics en studio"
+                loading="lazy"><span class="work__cue">▶ Lire</span></figure>
+            <div class="work__cap"><span class="work__n">03</span>
+              <h3>The Organics</h3><span class="work__type">Clip studio</span>
+            </div>
+          </article>
+          <article class="work" data-cat="event" data-video="drive:1nFxS_-6hYrdTQrPmpydjwVokQRoXoLTR"
+            data-title="Festival Elizik — Projection live">
+            <figure class="work__img"><img src="assets/img/elizik.jpg" alt="Festival Elizik à Narbonne Plage"
+                loading="lazy"><span class="work__cue">▶ Lire</span></figure>
+            <div class="work__cap"><span class="work__n">04</span>
+              <h3>Festival Elizik</h3><span class="work__type">Ville de Narbonne · live écran géant</span>
+            </div>
+          </article>
+          <article class="work" data-cat="event" data-video="drive:1bFxL35wxe7bgHooB5ReknQSfTid1jH73"
+            data-title="Parade de Noël 2025 — Villeneuve-lès-Béziers">
+            <figure class="work__img"><img src="assets/img/parade-noel.jpg"
+                alt="Parade de Noël à Villeneuve-lès-Béziers" loading="lazy"><span class="work__cue">▶ Lire</span>
+            </figure>
+            <div class="work__cap"><span class="work__n">05</span>
+              <h3>Parade de Noël 2025</h3><span class="work__type">Mairie de Villeneuve-lès-Béziers</span>
+            </div>
+          </article>
+          <article class="work" data-cat="doc" data-video="yt:_ACIJExE4pI"
+            data-title="Croix-Rouge française — Communication">
+            <figure class="work__img"><img src="assets/img/croix-rouge.jpg" alt="Bénévoles de la Croix-Rouge française"
+                loading="lazy"><span class="work__cue">▶ Lire</span></figure>
+            <div class="work__cap"><span class="work__n">06</span>
+              <h3>Croix-Rouge française</h3><span class="work__type">Communication · photo & vidéo</span>
+            </div>
+          </article>
+          <article class="work" data-cat="doc" data-video="drive:1iLkHwCJNpGI0WB8QdPuPjIL_MH_9IyCD"
+            data-title="« Humaniser la déshumanisation » — Auschwitz">
+            <figure class="work__img"><img src="assets/img/auschwitz.jpg" alt="Visite du camp d'Auschwitz"
+                loading="lazy"><span class="work__cue">▶ Lire</span></figure>
+            <div class="work__cap"><span class="work__n">07</span>
+              <h3>Humaniser la déshumanisation</h3><span class="work__type">Documentaire · Auschwitz</span>
+            </div>
+          </article>
+          <article class="work" data-cat="doc" data-video="drive:1tEoqAbjIrQP2E9jjrV3jH9jARz9pY69z"
+            data-title="Portrait — Michel Gelly, peintre">
+            <figure class="work__img"><img src="assets/img/michel-gelly.jpg"
+                alt="Le peintre Michel Gelly dans son atelier" loading="lazy"><span class="work__cue">▶ Lire</span>
+            </figure>
+            <div class="work__cap"><span class="work__n">08</span>
+              <h3>Michel Gelly, peintre</h3><span class="work__type">Portrait</span>
+            </div>
+          </article>
+          <article class="work" data-cat="doc" data-video="yt:PJxAfOa1Ubc"
+            data-title="« La colère d'un peuple » — Documentaire sur le 10/09">
+            <figure class="work__img"><img src="assets/img/colere-peuple.jpg" alt="Manifestation du 10 septembre"
+                loading="lazy"><span class="work__cue">▶ Lire</span></figure>
+            <div class="work__cap"><span class="work__n">09</span>
+              <h3>La colère d'un peuple</h3><span class="work__type">Documentaire · 10/09</span>
+            </div>
+          </article>
+          <article class="work" data-cat="doc" data-video="drive:1zinU7zGKm8xuZ7kLy0I46XlVvvF_cCTX"
+            data-title="Manifestation pour la gratuité de l'eau">
+            <figure class="work__img"><img src="assets/img/manif-eau.jpg" alt="Manifestation pour la gratuité de l'eau"
+                loading="lazy"><span class="work__cue">▶ Lire</span></figure>
+            <div class="work__cap"><span class="work__n">10</span>
+              <h3>Gratuité de l'eau</h3><span class="work__type">Reportage de terrain</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section class="section" id="services">
+      <div class="wrap">
+        <header class="head">
+          <span class="label">02 — Prestations</span>
+          <h2 class="h2">Une vidéo pour chaque <em>moment qui compte.</em></h2>
+        </header>
+
+        <ol class="offers">
+          <li class="offer">
+            <span class="offer__n">01</span>
+            <h3>Concerts & clips live</h3>
+            <p>Votre énergie de scène, enfin à la hauteur à l'écran. Repérage en répétition, plans dynamiques, son
+              synchronisé, étalonnage soigné.</p>
+            <span class="offer__for">Artistes, groupes, salles, labels</span>
+            <img class="offer__peek" src="assets/img/sophie-bas-bleus.jpg" alt="" aria-hidden="true">
+          </li>
+          <li class="offer">
+            <span class="offer__n">02</span>
+            <h3>Événements & collectivités</h3>
+            <p>Festivals, fêtes de ville, inaugurations. Un film souvenir, des formats courts pour communiquer, ou la
+              réalisation live sur écran géant.</p>
+            <span class="offer__for">Mairies, festivals, associations</span>
+            <img class="offer__peek" src="assets/img/parade-noel.jpg" alt="" aria-hidden="true">
+          </li>
+          <li class="offer">
+            <span class="offer__n">03</span>
+            <h3>Reportage & documentaire</h3>
+            <p>Raconter une histoire vraie avec justesse&nbsp;: portraits, sujets de société, films institutionnels.
+              Interviews, terrain, montage narratif.</p>
+            <span class="offer__for">Associations, entreprises, artistes</span>
+            <img class="offer__peek" src="assets/img/michel-gelly.jpg" alt="" aria-hidden="true">
+          </li>
+          <li class="offer">
+            <span class="offer__n">04</span>
+            <h3>Contenus réseaux sociaux</h3>
+            <p>2 millions de vues sur mes propres vidéos&nbsp;: je sais ce qui retient l'attention dans les premières
+              secondes. Formats verticaux, rythmés, sous-titrés.</p>
+            <span class="offer__for">Marques, commerces, artistes</span>
+            <img class="offer__peek" src="assets/img/reseaux.jpg" alt="" aria-hidden="true">
+          </li>
+        </ol>
+
+        <div class="quote-line">
+          <p>Chaque projet est différent&nbsp;: le tarif se fait sur devis, <strong>gratuit et sans engagement.</strong>
+          </p>
+          <a href="#contact" class="btn btn--light">Obtenir mon devis</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== METHODE ========== -->
+    <section class="section section--tight" id="methode">
+      <div class="wrap">
+        <header class="head">
+          <span class="label">03 — Méthode</span>
+          <h2 class="h2">Simple, <em>de bout en bout.</em></h2>
+        </header>
+        <ol class="steps">
+          <li><span class="tc">00:00:01</span>
+            <h3>On en parle</h3>
+            <p>Un appel ou un message pour comprendre votre projet, vos envies et votre budget. Vous recevez un devis
+              clair.</p>
+          </li>
+          <li><span class="tc">00:00:02</span>
+            <h3>On prépare</h3>
+            <p>Repérage, choix des morceaux ou des moments clés, plan de tournage. Rien n'est laissé au hasard le jour
+              J.</p>
+          </li>
+          <li><span class="tc">00:00:03</span>
+            <h3>Je tourne</h3>
+            <p>Sur place, en autonomie, discret et réactif. Vous profitez de votre événement, je m'occupe des images.
+            </p>
+          </li>
+          <li><span class="tc">00:00:04</span>
+            <h3>Je livre</h3>
+            <p>Montage, étalonnage, son. Une version à valider, vos retours intégrés, puis les fichiers pour chaque
+              plateforme.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="section" id="apropos">
+      <div class="wrap about">
+        <figure class="about__media">
+          <img src="assets/img/kenzo-portrait.jpg" alt="Kenzo Fossier avec sa caméra" loading="lazy">
+          <figcaption>Kenzo Fossier — fondateur d'Echoes Films</figcaption>
+        </figure>
+        <div class="about__text">
+          <span class="label">04 — À propos</span>
+          <h2 class="h2">Derrière <em>la caméra.</em></h2>
+          <p class="about__lead">Je filme depuis bientôt cinq ans. D'abord pour mes propres réseaux — plus de
+            20&nbsp;000 abonnés, 2 millions de vues, une collaboration avec la Sacem — puis pour des artistes, des
+            villes et des associations.</p>
+          <p>Passé par une école de cinéma (ACFA Multimédia), j'ai été chef opérateur sur un court-métrage, tourné un
+            documentaire à Auschwitz, couvert des mouvements sociaux et rejoint la communication de la Croix-Rouge
+            française.</p>
+          <p>En 2025, j'ai fondé Echoes Films avec une idée simple&nbsp;: créer avec vous un film qui fera écho chez
+            ceux qui le regarderont.</p>
+          <dl class="about__facts">
+            <div>
+              <dt>Basé à</dt>
+              <dd>Occitanie — Narbonne, Béziers</dd>
+            </div>
+            <div>
+              <dt>Rôles</dt>
+              <dd>Réalisation, cadre, chef op, montage, étalonnage</dd>
+            </div>
+            <div>
+              <dt>Formation</dt>
+              <dd>ACFA Multimédia</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== AVIS ========== -->
+    <section class="section" id="avis">
+      <div class="wrap">
+        <span class="label">05 — Avis clients</span>
+        <figure class="testi-main">
+          <blockquote>«&nbsp;Son regard artistique, sa sensibilité et son exigence technique ont véritablement sublimé
+            notre univers.&nbsp;»</blockquote>
+          <figcaption>Anne-Sophie — chanteuse, Sophie les Bas Bleus</figcaption>
+        </figure>
+        <div class="testis">
+          <figure>
+            <blockquote>Kenzo a réalisé de façon magistrale, soignée et en toute autonomie la projection du live sur
+              grand écran durant tout le Festival Elizik. Professionnel sérieux et discret, il est avant tout passionné
+              par son métier.</blockquote>
+            <figcaption><strong>Raphaël Canovas</strong>Festival Elizik, Ville de Narbonne</figcaption>
+          </figure>
+          <figure>
+            <blockquote>Échanges hyper professionnels, conseils sur le choix des morceaux en venant à une répétition.
+              Plans dynamiques, image vraiment très qualitative. Nous referons appel à Kenzo sans hésiter&nbsp;!
+            </blockquote>
+            <figcaption><strong>Jérôme</strong>Chanteur & bassiste, Brand New Coconut</figcaption>
+          </figure>
+          <figure>
+            <blockquote>Tu as un beau regard artistique et en plus une efficacité redoutable&nbsp;! Engagez ce garçon
+              les yeux fermés&nbsp;!</blockquote>
+            <figcaption><strong>Céline Dubois</strong>Adjointe, Mairie de Villeneuve-lès-Béziers</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="section section--tight" id="faq">
+      <div class="wrap faq">
+        <header>
+          <span class="label">06 — Questions</span>
+          <h2 class="h2">Avant de <em>se lancer.</em></h2>
+        </header>
+        <div class="faq__list">
+          <details>
+            <summary>Combien coûte une vidéo&nbsp;?</summary>
+            <p>Le prix dépend de la durée de tournage, du nombre de caméras et du montage attendu. Décrivez votre
+              projet&nbsp;: je vous envoie un devis détaillé, gratuit et sans engagement.</p>
+          </details>
+          <details>
+            <summary>Où intervenez-vous&nbsp;?</summary>
+            <p>Partout en Occitanie (Narbonne, Béziers, Montpellier, Perpignan, Toulouse…) et au-delà sur demande&nbsp;:
+              les frais de déplacement sont indiqués dans le devis.</p>
+          </details>
+          <details>
+            <summary>Quels sont les délais de livraison&nbsp;?</summary>
+            <p>Ils dépendent du projet et sont fixés ensemble avant le tournage. Pour un événement, des extraits courts
+              peuvent sortir rapidement pour profiter de l'élan sur les réseaux, puis le film complet ensuite.</p>
+          </details>
+          <details>
+            <summary>Je n'ai pas encore d'idée précise.</summary>
+            <p>C'est suffisant pour commencer. On construit le concept ensemble lors du premier échange.</p>
+          </details>
+          <details>
+            <summary>Dans quels formats livrez-vous&nbsp;?</summary>
+            <p>Horizontal pour YouTube et les écrans, vertical pour Instagram et TikTok, avec ou sans sous-titres. Des
+              fichiers prêts à publier.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="contact" id="contact">
+      <div class="wrap contact__inner">
+        <div class="contact__pitch">
+          <span class="label">07 — Contact</span>
+          <h2 class="contact__title">Racontons votre <em>histoire.</em></h2>
+          <p>Concert, clip, événement, reportage… Dites-m'en quelques mots, je reviens vers vous avec des idées et un
+            devis.</p>
+          <dl class="contact__list">
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:kenzofsr@gmail.com">kenzofsr@gmail.com</a></dd>
+            </div>
+            <div>
+              <dt>Instagram</dt>
+              <dd><a href="https://www.instagram.com/kenzo.fsr/" target="_blank" rel="noopener">@kenzo.fsr</a></dd>
+            </div>
+            <div>
+              <dt>TikTok</dt>
+              <dd><a href="https://www.tiktok.com/@kenzofossier" target="_blank" rel="noopener">@kenzofossier</a></dd>
+            </div>
+          </dl>
+        </div>
+
+        <form class="form" id="contactForm" novalidate>
+          <div class="form__row">
+            <label>Nom<input type="text" name="name" required autocomplete="name"></label>
+            <label>Email<input type="email" name="email" required autocomplete="email"></label>
+          </div>
+          <fieldset class="choice">
+            <legend>Type de projet</legend>
+            <label><input type="radio" name="type" value="Concert / clip" checked><span>Concert / clip</span></label>
+            <label><input type="radio" name="type" value="Événement"><span>Événement</span></label>
+            <label><input type="radio" name="type" value="Reportage"><span>Reportage</span></label>
+            <label><input type="radio" name="type" value="Réseaux sociaux"><span>Réseaux sociaux</span></label>
+            <label><input type="radio" name="type" value="Autre"><span>Autre</span></label>
+          </fieldset>
+          <div class="form__row">
+            <label>Date envisagée<input type="text" name="date"></label>
+            <label>Lieu<input type="text" name="place"></label>
+          </div>
+          <label>Votre projet<textarea name="message" rows="3" required></textarea></label>
+          <div class="form__foot">
+            <p class="form__note">Devis gratuit, sans engagement.</p>
+            <button type="submit" class="btn btn--light">Envoyer ma demande</button>
+          </div>
+          <p class="form__error" id="formError" role="alert"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p class="footer__mark" aria-hidden="true">Echoes Films</p>
+      <div class="footer__row">
+        <span>Kenzo Fossier — vidéaste en Occitanie</span>
+        <span>© <span id="year">2026</span> Echoes Films</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#contact" class="sticky-cta">Demander un devis gratuit</a>
+
+  <!-- Video modal -->
+  <div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__box">
+      <div class="modal__bar">
+        <p id="modalTitle"></p>
+        <button class="modal__close" data-close aria-label="Fermer la vidéo">Fermer ✕</button>
+      </div>
+      <div class="modal__frame" id="modalFrame"></div>
+      <div class="modal__foot">
+        <span>Envie du même rendu pour votre projet&nbsp;?</span>
+        <a href="#contact" class="btn btn--light btn--sm" data-close>Demander un devis</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
