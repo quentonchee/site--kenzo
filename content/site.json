@@ -1,0 +1,400 @@
+{
+  "meta": {
+    "title": "Echoes Films — Vidéaste en Occitanie · Captations, clips & reportages",
+    "description": "Kenzo Fossier, vidéaste en Occitanie (Narbonne, Béziers, Montpellier). Captations de concerts, clips musicaux, reportages et films événementiels. Devis gratuit.",
+    "ogTitle": "Echoes Films — Des films qui font écho",
+    "ogDescription": "Captations live, clips musicaux et reportages en Occitanie.",
+    "ogImage": "assets/img/elizik.jpg",
+    "favicon": "assets/img/emblem.png"
+  },
+  "theme": {
+    "bg": "#0b0b0b",
+    "text": "#ecebe6",
+    "muted": "#8d8c86"
+  },
+  "nav": {
+    "brand": "Echoes Films",
+    "links": [
+      {
+        "label": "Réalisations",
+        "href": "#realisations"
+      },
+      {
+        "label": "Prestations",
+        "href": "#services"
+      },
+      {
+        "label": "À propos",
+        "href": "#apropos"
+      },
+      {
+        "label": "Avis",
+        "href": "#avis"
+      }
+    ],
+    "cta": {
+      "label": "Demander un devis",
+      "href": "#contact"
+    }
+  },
+  "hero": {
+    "image": "assets/img/elizik.jpg",
+    "title": "Des films qui *font écho.*",
+    "lead": "Kenzo Fossier, vidéaste en Occitanie. Concerts, clips, événements et reportages — je filme vos moments forts et j'en fais des vidéos qu'on regarde jusqu'au bout.",
+    "primary": {
+      "label": "Parler de mon projet",
+      "href": "#contact"
+    },
+    "showreelLabel": "Showreel",
+    "showreelVideo": "https://www.youtube.com/watch?v=ewIkmJE53Hc",
+    "showreelTitle": "Showreel 2025",
+    "hud": true
+  },
+  "proof": {
+    "visible": true,
+    "stats": [
+      {
+        "value": "2",
+        "suffix": "M+",
+        "label": "vues sur TikTok"
+      },
+      {
+        "value": "20",
+        "suffix": "k+",
+        "label": "abonnés"
+      },
+      {
+        "value": "10",
+        "suffix": "+",
+        "label": "films réalisés"
+      },
+      {
+        "value": "5",
+        "suffix": " ans",
+        "label": "derrière la caméra"
+      }
+    ],
+    "clientsLabel": "Ils m'ont fait confiance",
+    "clients": [
+      {
+        "name": "Ville de Narbonne"
+      },
+      {
+        "name": "Festival Elizik"
+      },
+      {
+        "name": "Mairie de Villeneuve-lès-Béziers"
+      },
+      {
+        "name": "Sacem"
+      },
+      {
+        "name": "Croix-Rouge française"
+      },
+      {
+        "name": "Brand New Coconut"
+      },
+      {
+        "name": "Sophie les Bas Bleus"
+      },
+      {
+        "name": "The Organics"
+      }
+    ]
+  },
+  "portfolio": {
+    "visible": true,
+    "label": "01 — Réalisations",
+    "title": "Le travail parle *mieux que moi.*",
+    "allLabel": "Tout",
+    "playLabel": "▶ Lire",
+    "categories": [
+      {
+        "id": "live",
+        "label": "Musique"
+      },
+      {
+        "id": "event",
+        "label": "Événementiel"
+      },
+      {
+        "id": "doc",
+        "label": "Reportages"
+      }
+    ],
+    "items": [
+      {
+        "title": "Brand New Coconut",
+        "type": "Clip live · captation & montage",
+        "category": "live",
+        "image": "assets/img/brand-new-coconut.jpg",
+        "alt": "Le bassiste de Brand New Coconut sur scène",
+        "video": "https://www.youtube.com/watch?v=ZNZoCw3kd3o",
+        "featured": true
+      },
+      {
+        "title": "Sophie les Bas Bleus",
+        "type": "Clip live · étalonnage",
+        "category": "live",
+        "image": "assets/img/sophie-bas-bleus.jpg",
+        "alt": "Sophie les Bas Bleus sur scène",
+        "video": "https://www.youtube.com/watch?v=WjNtEWhwgZQ",
+        "featured": false
+      },
+      {
+        "title": "The Organics",
+        "type": "Clip studio",
+        "category": "live",
+        "image": "assets/img/the-organics.jpg",
+        "alt": "The Organics en studio",
+        "video": "https://drive.google.com/file/d/1pppkrDJ2mTZ-nWbjYvFdmbX0gcSM89vu/view",
+        "featured": false
+      },
+      {
+        "title": "Festival Elizik",
+        "type": "Ville de Narbonne · live écran géant",
+        "category": "event",
+        "image": "assets/img/elizik.jpg",
+        "alt": "Festival Elizik à Narbonne Plage",
+        "video": "https://drive.google.com/file/d/1nFxS_-6hYrdTQrPmpydjwVokQRoXoLTR/view",
+        "featured": false
+      },
+      {
+        "title": "Parade de Noël 2025",
+        "type": "Mairie de Villeneuve-lès-Béziers",
+        "category": "event",
+        "image": "assets/img/parade-noel.jpg",
+        "alt": "Parade de Noël à Villeneuve-lès-Béziers",
+        "video": "https://drive.google.com/file/d/1bFxL35wxe7bgHooB5ReknQSfTid1jH73/view",
+        "featured": false
+      },
+      {
+        "title": "Croix-Rouge française",
+        "type": "Communication · photo & vidéo",
+        "category": "doc",
+        "image": "assets/img/croix-rouge.jpg",
+        "alt": "Bénévoles de la Croix-Rouge française",
+        "video": "https://www.youtube.com/watch?v=_ACIJExE4pI",
+        "featured": false
+      },
+      {
+        "title": "Humaniser la déshumanisation",
+        "type": "Documentaire · Auschwitz",
+        "category": "doc",
+        "image": "assets/img/auschwitz.jpg",
+        "alt": "Visite du camp d'Auschwitz",
+        "video": "https://drive.google.com/file/d/1iLkHwCJNpGI0WB8QdPuPjIL_MH_9IyCD/view",
+        "featured": false
+      },
+      {
+        "title": "Michel Gelly, peintre",
+        "type": "Portrait",
+        "category": "doc",
+        "image": "assets/img/michel-gelly.jpg",
+        "alt": "Le peintre Michel Gelly dans son atelier",
+        "video": "https://drive.google.com/file/d/1tEoqAbjIrQP2E9jjrV3jH9jARz9pY69z/view",
+        "featured": false
+      },
+      {
+        "title": "La colère d'un peuple",
+        "type": "Documentaire · 10/09",
+        "category": "doc",
+        "image": "assets/img/colere-peuple.jpg",
+        "alt": "Manifestation du 10 septembre",
+        "video": "https://www.youtube.com/watch?v=PJxAfOa1Ubc",
+        "featured": false
+      },
+      {
+        "title": "Gratuité de l'eau",
+        "type": "Reportage de terrain",
+        "category": "doc",
+        "image": "assets/img/manif-eau.jpg",
+        "alt": "Manifestation pour la gratuité de l'eau",
+        "video": "https://drive.google.com/file/d/1zinU7zGKm8xuZ7kLy0I46XlVvvF_cCTX/view",
+        "featured": false
+      }
+    ]
+  },
+  "services": {
+    "visible": true,
+    "label": "02 — Prestations",
+    "title": "Une vidéo pour chaque *moment qui compte.*",
+    "items": [
+      {
+        "title": "Concerts & clips live",
+        "text": "Votre énergie de scène, enfin à la hauteur à l'écran. Repérage en répétition, plans dynamiques, son synchronisé, étalonnage soigné.",
+        "audience": "Artistes, groupes, salles, labels",
+        "image": "assets/img/sophie-bas-bleus.jpg"
+      },
+      {
+        "title": "Événements & collectivités",
+        "text": "Festivals, fêtes de ville, inaugurations. Un film souvenir, des formats courts pour communiquer, ou la réalisation live sur écran géant.",
+        "audience": "Mairies, festivals, associations",
+        "image": "assets/img/parade-noel.jpg"
+      },
+      {
+        "title": "Reportage & documentaire",
+        "text": "Raconter une histoire vraie avec justesse : portraits, sujets de société, films institutionnels. Interviews, terrain, montage narratif.",
+        "audience": "Associations, entreprises, artistes",
+        "image": "assets/img/michel-gelly.jpg"
+      },
+      {
+        "title": "Contenus réseaux sociaux",
+        "text": "2 millions de vues sur mes propres vidéos : je sais ce qui retient l'attention dans les premières secondes. Formats verticaux, rythmés, sous-titrés.",
+        "audience": "Marques, commerces, artistes",
+        "image": "assets/img/reseaux.jpg"
+      }
+    ],
+    "note": "Chaque projet est différent : le tarif se fait sur devis, **gratuit et sans engagement.**",
+    "cta": {
+      "label": "Obtenir mon devis",
+      "href": "#contact"
+    }
+  },
+  "method": {
+    "visible": true,
+    "label": "03 — Méthode",
+    "title": "Simple, *de bout en bout.*",
+    "steps": [
+      {
+        "code": "00:00:01",
+        "title": "On en parle",
+        "text": "Un appel ou un message pour comprendre votre projet, vos envies et votre budget. Vous recevez un devis clair."
+      },
+      {
+        "code": "00:00:02",
+        "title": "On prépare",
+        "text": "Repérage, choix des morceaux ou des moments clés, plan de tournage. Rien n'est laissé au hasard le jour J."
+      },
+      {
+        "code": "00:00:03",
+        "title": "Je tourne",
+        "text": "Sur place, en autonomie, discret et réactif. Vous profitez de votre événement, je m'occupe des images."
+      },
+      {
+        "code": "00:00:04",
+        "title": "Je livre",
+        "text": "Montage, étalonnage, son. Une version à valider, vos retours intégrés, puis les fichiers pour chaque plateforme."
+      }
+    ]
+  },
+  "about": {
+    "visible": true,
+    "label": "04 — À propos",
+    "title": "Derrière *la caméra.*",
+    "image": "assets/img/kenzo-portrait.jpg",
+    "alt": "Kenzo Fossier avec sa caméra",
+    "caption": "Kenzo Fossier — fondateur d'Echoes Films",
+    "lead": "Je filme depuis bientôt cinq ans. D'abord pour mes propres réseaux — plus de 20 000 abonnés, 2 millions de vues, une collaboration avec la Sacem — puis pour des artistes, des villes et des associations.",
+    "body": "Passé par une école de cinéma (ACFA Multimédia), j'ai été chef opérateur sur un court-métrage, tourné un documentaire à Auschwitz, couvert des mouvements sociaux et rejoint la communication de la Croix-Rouge française.\n\nEn 2025, j'ai fondé Echoes Films avec une idée simple : créer avec vous un film qui fera écho chez ceux qui le regarderont.",
+    "facts": [
+      {
+        "label": "Basé à",
+        "value": "Occitanie — Narbonne, Béziers"
+      },
+      {
+        "label": "Rôles",
+        "value": "Réalisation, cadre, chef op, montage, étalonnage"
+      },
+      {
+        "label": "Formation",
+        "value": "ACFA Multimédia"
+      }
+    ]
+  },
+  "testimonials": {
+    "visible": true,
+    "label": "05 — Avis clients",
+    "featuredQuote": "Son regard artistique, sa sensibilité et son exigence technique ont véritablement sublimé notre univers.",
+    "featuredAuthor": "Anne-Sophie — chanteuse, Sophie les Bas Bleus",
+    "items": [
+      {
+        "quote": "Kenzo a réalisé de façon magistrale, soignée et en toute autonomie la projection du live sur grand écran durant tout le Festival Elizik. Professionnel sérieux et discret, il est avant tout passionné par son métier.",
+        "name": "Raphaël Canovas",
+        "role": "Festival Elizik, Ville de Narbonne"
+      },
+      {
+        "quote": "Échanges hyper professionnels, conseils sur le choix des morceaux en venant à une répétition. Plans dynamiques, image vraiment très qualitative. Nous referons appel à Kenzo sans hésiter !",
+        "name": "Jérôme",
+        "role": "Chanteur & bassiste, Brand New Coconut"
+      },
+      {
+        "quote": "Tu as un beau regard artistique et en plus une efficacité redoutable ! Engagez ce garçon les yeux fermés !",
+        "name": "Céline Dubois",
+        "role": "Adjointe, Mairie de Villeneuve-lès-Béziers"
+      }
+    ]
+  },
+  "faq": {
+    "visible": true,
+    "label": "06 — Questions",
+    "title": "Avant de *se lancer.*",
+    "items": [
+      {
+        "question": "Combien coûte une vidéo ?",
+        "answer": "Le prix dépend de la durée de tournage, du nombre de caméras et du montage attendu. Décrivez votre projet : je vous envoie un devis détaillé, gratuit et sans engagement."
+      },
+      {
+        "question": "Où intervenez-vous ?",
+        "answer": "Partout en Occitanie (Narbonne, Béziers, Montpellier, Perpignan, Toulouse…) et au-delà sur demande : les frais de déplacement sont indiqués dans le devis."
+      },
+      {
+        "question": "Quels sont les délais de livraison ?",
+        "answer": "Ils dépendent du projet et sont fixés ensemble avant le tournage. Pour un événement, des extraits courts peuvent sortir rapidement pour profiter de l'élan sur les réseaux, puis le film complet ensuite."
+      },
+      {
+        "question": "Je n'ai pas encore d'idée précise.",
+        "answer": "C'est suffisant pour commencer. On construit le concept ensemble lors du premier échange."
+      },
+      {
+        "question": "Dans quels formats livrez-vous ?",
+        "answer": "Horizontal pour YouTube et les écrans, vertical pour Instagram et TikTok, avec ou sans sous-titres. Des fichiers prêts à publier."
+      }
+    ]
+  },
+  "contact": {
+    "label": "07 — Contact",
+    "title": "Racontons votre *histoire.*",
+    "text": "Concert, clip, événement, reportage… Dites-m'en quelques mots, je reviens vers vous avec des idées et un devis.",
+    "email": "kenzofsr@gmail.com",
+    "links": [
+      {
+        "label": "Instagram",
+        "text": "@kenzo.fsr",
+        "url": "https://www.instagram.com/kenzo.fsr/"
+      },
+      {
+        "label": "TikTok",
+        "text": "@kenzofossier",
+        "url": "https://www.tiktok.com/@kenzofossier"
+      }
+    ],
+    "projectTypes": [
+      {
+        "label": "Concert / clip"
+      },
+      {
+        "label": "Événement"
+      },
+      {
+        "label": "Reportage"
+      },
+      {
+        "label": "Réseaux sociaux"
+      },
+      {
+        "label": "Autre"
+      }
+    ],
+    "formNote": "Devis gratuit, sans engagement.",
+    "submitLabel": "Envoyer ma demande"
+  },
+  "footer": {
+    "mark": "Echoes Films",
+    "left": "Kenzo Fossier — vidéaste en Occitanie",
+    "copyright": "Echoes Films",
+    "stickyCta": "Demander un devis gratuit",
+    "modalText": "Envie du même rendu pour votre projet ?",
+    "modalCta": "Demander un devis"
+  }
+}

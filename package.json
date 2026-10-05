@@ -1,0 +1,12 @@
+{
+  "name": "echoes-films-site",
+  "private": true,
+  "type": "module",
+  "description": "Site Echoes Films + CMS maison (contenu dans content/site.json, interface sur /admin)",
+  "scripts": {
+    "build": "node build.js",
+    "start": "node server.js",
+    "cms": "node server.js"
+  },
+  "engines": { "node": ">=18" }
+}

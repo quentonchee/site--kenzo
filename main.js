@@ -2,7 +2,6 @@
   const $ = (s, c = document) => c.querySelector(s);
   const $$ = (s, c = document) => [...c.querySelectorAll(s)];
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const CONTACT_EMAIL = 'kenzofsr@gmail.com';
 
   /* ---------- Nav: scrolled state, active link, sticky CTA ---------- */
   const nav = $('#nav');
@@ -12,8 +11,9 @@
   const onScroll = () => {
     const y = window.scrollY;
     nav.classList.toggle('is-scrolled', y > 40);
-    const pastHero = y > hero.offsetHeight * 0.7;
-    const atContact = contact.getBoundingClientRect().top < window.innerHeight * 0.8;
+    if (!sticky) return;
+    const pastHero = y > (hero ? hero.offsetHeight : window.innerHeight) * 0.7;
+    const atContact = contact ? contact.getBoundingClientRect().top < window.innerHeight * 0.8 : false;
     sticky.classList.toggle('is-visible', pastHero && !atContact);
   };
   window.addEventListener('scroll', onScroll, { passive: true });
@@ -109,12 +109,18 @@
     const [kind, id] = src.split(':');
     if (kind === 'yt') return `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&modestbranding=1`;
     if (kind === 'drive') return `https://drive.google.com/file/d/${id}/preview`;
+    if (kind === 'vimeo') return `https://player.vimeo.com/video/${id}?autoplay=1`;
     return src;
   };
   const openVideo = (src, label) => {
     lastFocus = document.activeElement;
     title.textContent = label || '';
-    frame.innerHTML = `<iframe src="${embedUrl(src)}" title="${label || 'Vidéo'}" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>`;
+    const iframe = document.createElement('iframe');
+    iframe.src = embedUrl(src);
+    iframe.title = label || 'Vidéo';
+    iframe.allow = 'autoplay; encrypted-media; fullscreen; picture-in-picture';
+    iframe.allowFullscreen = true;
+    frame.replaceChildren(iframe);
     modal.hidden = false;
     document.body.style.overflow = 'hidden';
     $('.modal__close', modal).focus();
@@ -146,7 +152,7 @@
   /* ---------- Contact form → pre-filled email ---------- */
   const form = $('#contactForm');
   const err = $('#formError');
-  form.addEventListener('submit', (e) => {
+  if (form) form.addEventListener('submit', (e) => {
     e.preventDefault();
     const data = new FormData(form);
     const required = ['name', 'email', 'message'];
@@ -160,18 +166,20 @@
     if (!ok) { err.textContent = 'Merci de compléter votre nom, un email valide et quelques mots sur le projet.'; return; }
     err.textContent = '';
 
-    const subject = `Demande de devis — ${data.get('type')} — ${data.get('name')}`;
+    const type = data.get('type') || 'Projet';
+    const subject = `Demande de devis — ${type} — ${data.get('name')}`;
     const body = [
       `Nom : ${data.get('name')}`,
       `Email : ${data.get('email')}`,
-      `Type de projet : ${data.get('type')}`,
+      `Type de projet : ${type}`,
       `Date envisagée : ${data.get('date') || '—'}`,
       `Lieu : ${data.get('place') || '—'}`,
       '',
       data.get('message'),
     ].join('\n');
-    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:${form.dataset.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   });
 
-  $('#year').textContent = new Date().getFullYear();
+  const year = $('#year');
+  if (year) year.textContent = new Date().getFullYear();
 })();

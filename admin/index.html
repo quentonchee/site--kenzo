@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>CMS — Echoes Films</title>
+  <link rel="icon" href="../assets/img/emblem.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+  <!-- Loading -->
+  <div class="screen" id="screenLoading">
+    <p class="muted">Chargement du CMS…</p>
+  </div>
+
+  <!-- Server mode: password -->
+  <div class="screen" id="screenLogin" hidden>
+    <form class="card auth" id="loginForm">
+      <p class="eyebrow">Echoes Films · CMS</p>
+      <h1>Connexion</h1>
+      <label class="field">
+        <span class="field__label">Mot de passe</span>
+        <input type="password" name="password" autocomplete="current-password" required autofocus>
+      </label>
+      <p class="error" id="loginError" role="alert"></p>
+      <button class="btn btn--primary btn--block" type="submit">Entrer</button>
+    </form>
+  </div>
+
+  <!-- Server mode without password configured -->
+  <div class="screen" id="screenSetup" hidden>
+    <div class="card auth">
+      <p class="eyebrow">Echoes Films · CMS</p>
+      <h1>Configuration requise</h1>
+      <p>Créez un fichier <code>.env</code> à la racine du projet avec&nbsp;:</p>
+      <pre>CMS_PASSWORD=votre-mot-de-passe</pre>
+      <p class="muted">puis relancez le serveur (<code>npm start</code>).</p>
+    </div>
+  </div>
+
+  <!-- GitHub mode: connect -->
+  <div class="screen" id="screenGithub" hidden>
+    <form class="card auth auth--wide" id="githubForm">
+      <p class="eyebrow">Echoes Films · CMS</p>
+      <h1>Connecter GitHub</h1>
+      <p>Le site est hébergé sur GitHub&nbsp;: le CMS y enregistre directement vos modifications. Il faut pour cela un <strong>jeton d'accès</strong>, à créer une seule fois.</p>
+      <ol class="steps">
+        <li>Ouvrez <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com → Fine-grained token</a>.</li>
+        <li><em>Repository access</em> : <strong>Only select repositories</strong> → choisissez le dépôt du site.</li>
+        <li><em>Permissions</em> → <strong>Contents : Read and write</strong> (et <strong>Pages : Read</strong> pour suivre la mise en ligne).</li>
+        <li>Cliquez <em>Generate token</em>, copiez-le et collez-le ci-dessous.</li>
+      </ol>
+      <div class="row">
+        <label class="field field--half"><span class="field__label">Compte GitHub</span><input name="owner" required></label>
+        <label class="field field--half"><span class="field__label">Dépôt</span><input name="repo" required></label>
+      </div>
+      <div class="row">
+        <label class="field field--half"><span class="field__label">Branche</span><input name="branch" required></label>
+        <label class="field field--half"><span class="field__label">Jeton d'accès</span><input name="token" type="password" autocomplete="off" required placeholder="github_pat_…"></label>
+      </div>
+      <p class="muted small">Le jeton reste uniquement dans ce navigateur. Utilisez « Déconnexion » sur un ordinateur partagé.</p>
+      <p class="error" id="githubError" role="alert"></p>
+      <button class="btn btn--primary btn--block" type="submit">Se connecter</button>
+    </form>
+  </div>
+
+  <!-- App -->
+  <div class="app" id="app" hidden>
+    <header class="topbar">
+      <div class="topbar__brand">
+        <img src="../assets/img/emblem.png" alt="" width="22" height="22">
+        <span>Echoes CMS</span>
+        <span class="badge" id="modeBadge"></span>
+      </div>
+      <span class="status" id="status" aria-live="polite"></span>
+      <div class="topbar__actions">
+        <div class="seg" role="group" aria-label="Taille de l'aperçu">
+          <button class="seg__btn is-on" data-device="desktop" title="Aperçu ordinateur">Ordi</button>
+          <button class="seg__btn" data-device="mobile" title="Aperçu mobile">Mobile</button>
+        </div>
+        <button class="btn btn--ghost only-narrow" id="togglePreview">Aperçu</button>
+        <button class="btn btn--ghost" id="historyBtn">Historique</button>
+        <a class="btn btn--ghost" id="siteLink" target="_blank" rel="noopener">Voir le site ↗</a>
+        <div class="menu">
+          <button class="btn btn--ghost" id="menuBtn" aria-haspopup="true" aria-expanded="false" aria-label="Plus d'options">⋯</button>
+          <div class="menu__list" id="menuList" hidden>
+            <button id="revertBtn">Annuler les modifications non publiées</button>
+            <button id="exportBtn">Télécharger une sauvegarde (.json)</button>
+            <label class="menu__file">Importer une sauvegarde<input type="file" id="importInput" accept="application/json,.json"></label>
+            <button id="logoutBtn">Déconnexion</button>
+          </div>
+        </div>
+        <button class="btn btn--primary" id="publishBtn">Publier</button>
+      </div>
+    </header>
+
+    <nav class="sidebar" id="sidebar" aria-label="Sections du site"></nav>
+
+    <main class="editor" id="editor"></main>
+
+    <section class="preview" id="previewPane" aria-label="Aperçu">
+      <div class="preview__stage" id="previewStage">
+        <iframe id="preview" title="Aperçu du site" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+      </div>
+    </section>
+  </div>
+
+  <!-- Dialogs -->
+  <dialog class="dialog" id="historyDialog">
+    <div class="dialog__head"><h2>Historique des versions</h2><button class="icon-btn" data-close-dialog aria-label="Fermer">✕</button></div>
+    <p class="muted small">Chaque publication est conservée. Restaurer une version la charge dans l'éditeur&nbsp;: publiez ensuite pour la remettre en ligne.</p>
+    <ul class="history" id="historyList"></ul>
+  </dialog>
+
+  <dialog class="dialog dialog--wide" id="mediaDialog">
+    <div class="dialog__head"><h2>Bibliothèque d'images</h2><button class="icon-btn" data-close-dialog aria-label="Fermer">✕</button></div>
+    <div class="media" id="mediaGrid"></div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" hidden></div>
+
+  <script type="module" src="admin.js"></script>
+</body>
+</html>
